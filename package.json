@@ -1,0 +1,10 @@
+{
+  "name": "ProjetoDeTestes",
+  "version": "0.0.1",
+  "dependencies": {
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
