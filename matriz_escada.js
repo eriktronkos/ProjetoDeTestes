@@ -31,9 +31,9 @@ function matriz_escada(n, m, matriz) {
             }
         }
         thisLeftIndex = lastZeroIndex;
-        console.log("i=" + i);
-        console.log("last=" + lastLeftIndex);
-        console.log("most=" + thisLeftIndex);
+        // console.log("i=" + i);
+        // console.log("last=" + lastLeftIndex);
+        // console.log("most=" + thisLeftIndex);
         if (lastLeftIndex >= thisLeftIndex && i > 0)
             return "N";
         else

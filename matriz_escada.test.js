@@ -35,3 +35,11 @@ test('CT8', function () {
 test('CT9', function () {
     expect(matriz_escada(2,3,[[1,6,2],[0,0,0]])).toBe("S");
 });
+
+test('CT10', function () {
+    expect(matriz_escada(2,3,4)).toBe("N");
+});
+
+test('CT11', function () {
+    expect(matriz_escada(2,2,[[1,6],[1000000000,0]])).toBe("N");
+});
