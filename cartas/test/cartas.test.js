@@ -1,4 +1,4 @@
-const cartas = require('./cartas');
+const cartas = require('../src/cartas');
 
 test('CT1', function () {
     expect(cartas([0,2,2,4,6])).toBe("E");

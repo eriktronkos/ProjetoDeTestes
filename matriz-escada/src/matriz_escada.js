@@ -19,6 +19,9 @@ function matriz_escada(n, m, matriz) {
             }
         }
     }
+    else {
+        return "N";
+    }
 
     var lastLeftIndex = -1;
     for (var i = 0; i < matriz.length; i++) {

@@ -1,4 +1,4 @@
-const matriz_escada = require('./matriz_escada');
+const matriz_escada = require('../src/matriz_escada');
 
 test('CT1', function () {
     expect(matriz_escada(3,3,[[1,2,3],[0,4,2],[0,0,1]])).toBe("S");
@@ -42,4 +42,21 @@ test('CT10', function () {
 
 test('CT11', function () {
     expect(matriz_escada(2,2,[[1,6],[1000000000,0]])).toBe("N");
+});
+
+//Mutant killing tests
+test('CT12', function () {
+    expect(matriz_escada(0,0,[])).toBe("N");
+});
+
+test('CT13', function () {
+    expect(matriz_escada(2,2,[[1,6],[0,2],[0,0]])).toBe("N");
+});
+
+test('CT14', function () {
+    expect(matriz_escada(3,5,[[1,6],[0,2],[0,0]])).toBe("N");
+});
+
+test('CT15', function () {
+    expect(matriz_escada(2,3,[[0,1,1],[1,0,1]])).toBe("N");
 });
